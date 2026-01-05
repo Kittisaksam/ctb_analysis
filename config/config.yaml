@@ -1,0 +1,48 @@
+# Configuration file for CTB Data Science Project
+
+# Data settings
+data:
+  raw_data_path: "data/raw"
+  processed_data_path: "data/processed"
+  interim_data_path: "data/interim"
+  external_data_path: "data/external"
+
+# Binance API settings
+binance:
+  base_url: "https://api.binance.com/api/v3"
+  default_symbol: "BTCUSDT"
+  default_interval: "1d"
+  years_back: 3
+
+# Model settings
+model:
+  output_path: "models"
+  random_seed: 42
+  test_size: 0.2
+  validation_size: 0.1
+
+# Output settings
+output:
+  figures_path: "outputs/figures"
+  reports_path: "outputs/reports"
+  dpi: 300
+  figure_format: "png"
+
+# Feature engineering
+features:
+  technical_indicators:
+    - "SMA"
+    - "EMA"
+    - "RSI"
+    - "MACD"
+    - "Bollinger_Bands"
+  lookback_periods:
+    - 7
+    - 14
+    - 30
+    - 60
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

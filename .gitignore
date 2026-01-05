@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Data files
+data/raw/*
+data/processed/*
+data/interim/*
+data/external/*
+*.csv
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.parquet
+*.h5
+*.hdf5
+
+# Keep .gitkeep files
+!**/.gitkeep
+
+# Models
+models/*.pkl
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.joblib
+
+# Outputs
+outputs/figures/*.png
+outputs/figures/*.jpg
+outputs/figures/*.pdf
+outputs/reports/*.html
+outputs/reports/*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
